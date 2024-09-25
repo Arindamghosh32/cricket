@@ -1,0 +1,43 @@
+.trophy-image{
+    width:17%;
+    height:auto;
+}
+.trophy-title{
+    color:white;
+    margin-left: 10vh;
+    font-size: 20px;
+}
+.container-trophy{
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin-left: -5vh;
+    margin-top: 5vh; /* Space between the content and the trophy section */
+    display:flex;
+    flex-direction: row;
+    gap:10vh
+
+}
+.container-trophy-1{
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin-left:-20vh;
+    margin-top: 40vh;
+    min-height: 80vh; 
+}
+.container-trophy-content{
+    position:relative;
+    margin-top: -10vh;
+    color: white;
+    transform: translate(40%, 60%);
+    width:700px;
+}
+.trophy-image {
+    position: absolute; 
+    top: 129%; 
+    left: 15%; 
+    transform: translate(30%, 1190%); 
+    width: 17%;
+    height: auto;
+}
+
+  

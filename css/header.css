@@ -1,0 +1,52 @@
+
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(69, 108, 214, 0.1); 
+  backdrop-filter: blur(6px); 
+  margin: -10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
+  position: relative;
+  z-index: 1; 
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+}
+
+
+.anchor {
+  display: flex;
+  gap: 20px;
+}
+
+.anchor a, .anchor .link {
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: -30px;
+  margin-right: 20px;
+  color: rgb(218, 119, 57);
+  transition: color 0.2s ease, z-index 0.2s ease; 
+  z-index: 1; 
+}
+
+.anchor a:hover, .anchor .link:hover {
+  color: white; 
+}
+
+
+.light {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(0, 0, 225, 1.0) 3%, transparent 7%); /* Light effect */
+  z-index: 0; 
+}

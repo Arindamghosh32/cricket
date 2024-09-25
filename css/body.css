@@ -1,0 +1,99 @@
+.pody {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 40px;
+  margin-top: 60px;
+  margin-left: 20px;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 10; 
+}
+
+.light {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(0,0,225,1.0) 3%, transparent 7%);
+}
+
+.cricketer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cricketer-background {
+  position: relative;
+  display: inline-block;
+}
+
+.cricketer-background::before {
+  content: '';
+  position: absolute;
+  top: -20px; 
+  left: -20px; 
+  width: calc(100% + 10px); 
+  height: calc(100% + 10px); 
+  background-color: chartreuse;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  z-index: -1; 
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.trapezium-image {
+  width: 400px; 
+  height: 350px; 
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  object-fit: fill; 
+  opacity: 1; 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+  background-color: chartreuse;
+  
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.about {
+  width: 600px;
+}
+
+.cricketer-name {
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cricketer-image,
+.cricketer-name {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.title:hover,
+.cricketer-name:hover {
+  position: relative;
+  
+  background: radial-gradient(circle at var(--x) var(--y), rgba(0,0,255,1.0) 3%, transparent 7%);
+}
+
+.title:hover .light,
+.cricketer-name:hover .light {
+  visibility: visible;
+  opacity: 1;
+}
+

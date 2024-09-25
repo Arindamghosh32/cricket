@@ -1,0 +1,5 @@
+.reg-background{
+    background-image: url('./../assets/pixelcut-export.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+}

@@ -1,0 +1,139 @@
+.registration-body{
+    position:absolute;
+    transform: translate(100%,20%);
+    background-color: beige;
+    height:60vh;
+    width:60vh;
+    border-radius: 45px;
+    box-shadow: 5px 5px 10px rgba(41, 5, 243, 0.2),
+    10px 10px 20px rgb(255, 255, 255),
+    20px 20px 40px rgba(252, 144, 3, 0.6);
+    background-color: rgba(69, 108, 214, 0.1); /* Transparent background */
+    backdrop-filter: blur(6px); /* Apply blur to the background */
+    padding: 20px;
+    overflow: hidden;
+}
+.reg-title{
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+}
+.reg-body{
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    
+}
+
+
+.input-form input {
+    display: block;
+    padding: 10px;
+    outline: none;
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    width: 18rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-form input:focus {
+    border-bottom-color: white;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.buttons{
+    position:relative;
+    text-align: right;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    display: flex;
+    gap:18rem;
+}
+.buttons-first{
+    text-align: right;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+.buttons-last{
+    padding-top: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+.left-button{
+    flex-grow: 1;
+}
+.right-button{
+    flex-grow: 0;
+}
+.form{
+    display:flex;
+    
+}
+.form-group{
+    min-width:100%;
+    padding: -0.8rem;
+    margin-right: 2.0rem;
+}
+.form-group-1{
+    min-width:100%;
+    margin-left: -22rem;
+    margin-right: 4rem;
+    padding-left: 1.0rem;
+    transform: translateX(100%);
+}
+.form-group-2{
+    min-width:100%;
+    margin-right: 5rem;
+    transform: translateX(100%);
+    padding-left: 1.0rem;
+}
+.form-group-3{
+    min-width:100%;
+    margin-right: 6rem;
+    transform: translateX(100%);
+    padding-left: 0.1rem;
+}
+.radio{
+    display:flex;
+    width:6rem;
+}
+.radios{
+    display:flex;
+    padding-top: 1rem;
+}
+
+    .submit-button {
+        color: white;  
+        background: linear-gradient(120deg, rgb(30, 6, 123), rgb(74, 120, 219), white);  /* Gradient background */
+        font: inherit;  
+        border: none; 
+        padding: 10px 20px;  
+        cursor: pointer;  
+        outline: none;  
+        width:21rem;
+        border-radius: 5px; 
+    }
+    
+.submit-container{
+    transform: translate(2%,200%);
+}
+.animate{
+    position: absolute;
+    background-color: blueviolet;
+    padding:5px 10px;
+}
+
+
+.rad{
+    display:flex;
+    padding-top: 1rem;
+}
